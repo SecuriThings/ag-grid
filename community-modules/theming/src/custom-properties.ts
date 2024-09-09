@@ -13,12 +13,8 @@ type AllParams = CoreParams & CheckboxStyleParams & TabStyleParams & InputStyleP
 /**
  * Set theme params as custom properties on an element.
  *
- * e.g. theme.applyCustomProperties({ gridSize: 4 }, document.body) is
+ * e.g. applyCustomProperties({ gridSize: 4 }, document.body) is
  * equivalent to document.body.style.setProperty('--ag-grid-size', '4px');
- *
- * This method is equivalent to the global applyCustomProperties function,
- * except that it provides typescript validation of the params object, only
- * permitting values that are supported by the current theme.
  */
 export const applyCustomProperties = (params: Partial<AllParams>, el: HTMLElement) => {
     for (const [key, value] of getCustomProperties(params)) {

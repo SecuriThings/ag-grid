@@ -237,7 +237,7 @@
 }
 
 .ag-details-row {
-    padding: calc(var(--ag-grid-size) * 3.5);
+    padding: calc(var(--ag-spacing) * 3.5);
     background-color: var(--ag-background-color);
 }
 
@@ -311,5 +311,5 @@
 }
 
 .ag-details-row {
-    padding: calc(var(--ag-grid-size) * 3.75);
+    padding: calc(var(--ag-spacing) * 3.75);
 }

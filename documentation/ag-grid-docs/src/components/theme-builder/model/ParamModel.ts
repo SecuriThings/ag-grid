@@ -21,7 +21,7 @@ const nonAdvancedParams = new Set([
     'rowBorder',
     'columnBorder',
     'sidePanelBorder',
-    'gridSize',
+    'spacing',
     'wrapperBorderRadius',
     'borderRadius',
     'headerBackgroundColor',

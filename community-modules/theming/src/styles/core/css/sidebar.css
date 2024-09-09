@@ -58,7 +58,7 @@
 
 .ag-side-buttons {
     position: relative;
-    width: calc(var(--ag-icon-size) + var(--ag-grid-size) * 2);
+    width: calc(var(--ag-icon-size) + var(--ag-spacing) * 2);
 }
 
 .ag-side-button {
@@ -77,11 +77,11 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: var(--ag-grid-size);
+    gap: var(--ag-spacing);
     align-items: center;
     white-space: nowrap;
 
-    padding: calc(var(--ag-grid-size) * 3) 0;
+    padding: calc(var(--ag-spacing) * 3) 0;
     width: 100%;
 
     &:focus {

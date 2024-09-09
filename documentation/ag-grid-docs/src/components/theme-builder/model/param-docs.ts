@@ -79,7 +79,7 @@ const docs: Record<AllThemeParams, string> = {
         'Color to temporarily apply to cell data when its value decreases in an agAnimateShowChangeCellRenderer cell',
     valueChangeValueHighlightBackgroundColor:
         'Background color to apply when a cell value changes and enableCellChangeFlash is enabled',
-    gridSize:
+    spacing:
         'Amount of spacing around and inside UI elements. All padding and margins in the grid are defined as a multiple of this value.',
     cellHorizontalPadding: 'Padding at the start and end of grid cells and header cells.',
     cellHorizontalPaddingScale: 'Multiply the cell horizontal padding by a number, e.g. 1.5 to increase by 50%',

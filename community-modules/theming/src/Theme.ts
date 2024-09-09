@@ -1,11 +1,9 @@
-import { type GridTheme, type GridThemeUseArgs, _warnOnce } from '@ag-grid-community/core';
-import { _errorOnce } from '@ag-grid-community/core';
+import { type GridTheme, type GridThemeUseArgs, _errorOnce, _warnOnce } from '@ag-grid-community/core';
 
 import type { Part } from './Part';
 import { getCustomProperties } from './custom-properties';
 import { type CoreParams, coreCSS, coreDefaults } from './styles/core/core-css';
-import { paramValueToCss } from './theme-types';
-import { type CssFragment } from './theme-types';
+import { type CssFragment, paramValueToCss } from './theme-types';
 import { paramToVariableName } from './theme-utils';
 
 export type Theme<TParams = unknown> = GridTheme & {
@@ -238,7 +236,7 @@ const makeVariablesChunk = (theme: Theme): ThemeCssChunk => {
     //
     // Simply setting .ag-root-wrapper { --ag-foo: default-value } is not
     // appropriate because it will override any values set on parent
-    // elements. An application should be able to set `--ag-grid-size: 4px`
+    // elements. An application should be able to set `--ag-spacing: 4px`
     // on the document body and have it picked up by all grids on the page.
     //
     // To allow this we capture the application-provided value of --ag-foo
